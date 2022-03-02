@@ -28,14 +28,14 @@ jobs:
       # Runs a single command using the runners shell
       - uses: hashicorp/setup-terraform@v1
       - name: Terraform fmt
-            id: fmt
+            #id: fmt
             run: terraform fmt
             continue-on-error: true
       - name: Terraform Init
-            id: init
+            #id: init
             run: terraform init
       - name: Terraform Validate
-            id: validate
+            #id: validate
             run: terraform validate -no-color
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
