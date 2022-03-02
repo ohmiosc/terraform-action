@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: run terraform
-        run: hashicorp/setup-terraform@v1
+      - uses: hashicorp/setup-terraform@v1
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
